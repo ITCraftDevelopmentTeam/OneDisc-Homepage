@@ -26,7 +26,7 @@
 
 -->
 
-## 测试版
+## 测试版 ![Build (Dev)](https://github.com/ITCraftDevelopmentTeam/OneDisc/actions/workflows/build-beta.yml/badge.svg)
 
 |          | x86_64                             |
 |----------|:----------------------------------:|
