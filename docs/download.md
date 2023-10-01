@@ -1,6 +1,6 @@
 # 发行版下载
 
-| 最新稳定版  | 最新公测版  |
+| 最新稳定版  | 最新测试版  |
 |-------------|-------------|
 | `None`    | <!--ver2-->`0.1.0.0`<!--ver2.end--> |
 
@@ -26,7 +26,7 @@
 
 -->
 
-## 测试版 ![Build (Dev)](https://github.com/ITCraftDevelopmentTeam/OneDisc/actions/workflows/build-beta.yml/badge.svg)
+## 测试版
 
 |          | x86_64                             |
 |----------|:----------------------------------:|
