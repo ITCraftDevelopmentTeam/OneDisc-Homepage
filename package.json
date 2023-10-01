@@ -9,5 +9,12 @@
   "private": false,
   "devDependencies": {
     "vitepress": "^1.0.0-rc.20"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   }
+
+
 }
