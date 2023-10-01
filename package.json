@@ -1,0 +1,10 @@
+{
+  "name": "OneDisc-Homepage",
+  "version": "1.0.0",
+  "description": "基于 Discord 的 OneBot 实现",
+  "main": "index.js",
+  "repository": "https://github.com/ITCraftDevelopmentTeam/OneDisc-Homepage",
+  "author": "IT Craft Development Team",
+  "license": "MIT",
+  "private": false
+}
