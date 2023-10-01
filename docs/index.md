@@ -8,7 +8,7 @@ hero:
   name: OneDisc
   text: Discord 的 OneBot 实现
   tagline: 快速、跨平台，基于 discord.py 的 OneBot 实现
-  image: logo.png
+  image: /logo.png
   actions:
     - theme: brand
       text: 快速开始

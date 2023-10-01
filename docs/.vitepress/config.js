@@ -2,7 +2,7 @@ module.exports = {
   title: "OneDisc",
   description: "Discord 的 OneBot 实现",
   themeConfig: {
-    logo: 'logo.png',
+    logo: '/logo.png',
 
     nav: [
       { text: "主页", link: "/" },
