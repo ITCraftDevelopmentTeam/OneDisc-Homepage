@@ -100,6 +100,18 @@ OneBot V12 心跳元事件设置
 
 如为 `false` 将以 `message.group` 事件推送消息
 
+### 禁用SSL校验（`disable_ssl`）
+
+| 类型       | 必须 | 默认值     |
+|:----------:|:----:|:----------:|
+| 布尔       | 否   | `false`    |
+
+__警告：__ 此项为`true`时将禁用`aiohttp`的 SSL 校验，容易出现不可预料的后果，建议仅在出现以下报错时尝试打开
+
+```python
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host discord.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')]
+```
+
 ## 连接方式（`servers`）
 
 | 类型       | 必须 | 默认值     |
