@@ -81,13 +81,13 @@ OneBot V12 心跳元事件设置
 
 `upload_file` 及相关动作下载出错时的重试次数
 
-### 是否忽略自身消息（`ignore_self_message`）
+### 是否忽略自身事件（`ignore_self_events`）
 
 | 类型       | 必须 | 默认值     |
 |:----------:|:----:|:----------:|
 | 布尔       | 否   | `true`     |
 
-在消息事件中是否忽略 Bot 自身发出的消息
+如果此项为`true`，将忽略由 Bot 自身触发的事件
 
 
 ### 是否启用两级群组事件（`enable_channel_event`）

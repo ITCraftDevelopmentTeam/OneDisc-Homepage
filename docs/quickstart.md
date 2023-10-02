@@ -30,7 +30,7 @@
 
 1. 登陆 [Discord Developer Portal](https://discord.com/developers/applications)
 2. 点击 `New Application`，填写 Bot 名称，勾选协议并点击 `Create`
-3. 在新建的应用程序中，点击 `Bot`，打开 `MESSAGE CONTENT INTENT` 开关
+3. 在新建的应用程序中，点击 `Bot`，打开 `MESSAGE CONTENT INTENT`、`SERVER MEMBERS INTENT` 开关
 4. 点击 `TOKEN` -> `Reset Token`，将新的令牌填入 OneDisc
 
 ### 配置文件
