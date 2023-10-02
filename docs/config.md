@@ -100,6 +100,12 @@ OneBot V12 心跳元事件设置
 
 如在`channel_message_delete`事件中，由于`discord.py`限制，无法判断消息为主动删除还是被管理员删除，当`use_empty_for_unsupported_subtype`为`false`时，这个事件的`sub_type`将被填入`recall`（发送者主动删除）；当`use_empty_for_unsupported_subtype`为`true`时，这个事件的`sub_type`将被填入空字符串
 
+### 是否忽略不支持的消息段（`ignore_unsupported_segment`）
+
+| 类型      | 必须 | 默认值           |
+|:---------:|:----:|:----------------:|
+| 布尔      | 否   | `flase`          |
+
 ### 是否启用两级群组事件（`enable_channel_event`）
 
 | 类型       | 必须 | 默认值     |
