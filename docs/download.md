@@ -2,7 +2,7 @@
 
 | 最新稳定版  | 最新测试版  |
 |-------------|-------------|
-| `None`    | <!--ver2-->`0.1.0.0`<!--ver2.end--> |
+| <span id="stable-version">Loading version...</span> | <span id="beta-version">Loading version...</span> |
 
 <!--
 ## 稳定版
@@ -32,5 +32,21 @@
 |----------|:----------------------------------:|
 | Linux    | [OneDisc-linux-x86_64-dev.zip][10] |
 
-[10]: /downloads/OneDisc-linux-x86_64-dev.zip
+[10]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/beta/OneDisc-linux-x86_64-dev.zip
+
+
+<template>
+  <div></div>
+</template>
+
+<script>
+export default {
+  mounted() {
+    const script = document.createElement('script');
+    script.src = '/load_version.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }
+}
+</script>
 
