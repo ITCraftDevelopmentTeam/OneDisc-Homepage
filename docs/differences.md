@@ -9,8 +9,6 @@
 | 设置群名称    | `set_group_name`         | `discord.py` 未提供相关接口  |
 | 设置群组名称  | `set_guild_name`         | `discord.py` 未提供相关接口  |
 | 设置频道名称  | `set_channel_name`       | `discord.py` 未提供相关接口  |
-| 分片上传文件  | `upload_file_fragmented` | 太懒，还没写                 |
-| 分片获取文件  | `get_file_fragmented`    | 太懒，还没写                 |
 
 ## 支持受限的动作
 
