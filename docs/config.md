@@ -48,15 +48,8 @@ OneDisc 高级设置（无特殊需要不建议更改）
 
 配置日志记录工具时的参数，可参考 [Python3 文档](https://docs.python.org/zh-cn/3/library/logging.html?highlight=logging%20basicconfig#logging.basicConfig)
 
-### 心跳元事件设置（`heartbeat`）
 
-| 类型       | 必须 | 默认值     |
-|:----------:|:----:|:----------:|
-| 对象       | 否   | `{"enable": true, 'interval': 5000}` |
-
-OneBot V12 心跳元事件设置
-
-#### 忽略不需要的实参（`ignore_unneeded_args`）
+### 忽略不需要的实参（`ignore_unneeded_args`）
 
 | 类型       | 必须 | 默认值                 |
 |:----------:|:----:|:----------------------:|
@@ -66,7 +59,7 @@ OneBot V12 心跳元事件设置
 
 如为 `false`，将在处理请求中发现不被动作需要的参数时返回 `10004 - Unsupported Param`
 
-#### 忽略不正确的类型（`ignore_error_types`）
+### 忽略不正确的类型（`ignore_error_types`）
 
 
 | 类型       | 必须 | 默认值                 |
@@ -77,6 +70,13 @@ OneBot V12 心跳元事件设置
 
 如为 `false`，将在处理请求中发现类型不正确的参数时返回 `10001 - Bad Request`
 
+### 心跳元事件设置（`heartbeat`）
+
+| 类型       | 必须 | 默认值     |
+|:----------:|:----:|:----------:|
+| 对象       | 否   | `{"enable": true, 'interval': 5000}` |
+
+OneBot V12 心跳元事件设置
 
 #### 心跳事件开关（`enable`）
 
