@@ -4,27 +4,24 @@
 |-------------|-------------|
 | <span id="stable-version">Loading version...</span> | <span id="beta-version">Loading version...</span> |
 
-<!--
 ## 稳定版
 
-|            | x86_64                         | i386                         | arm64                          |
+|            | x64                            | x86                          | arm64                          |
 |------------|:------------------------------:|:----------------------------:|:------------------------------:|
-| Linux      | [OneDisc-linux-x86_64.zip][1]  | [OneDisc-linux-i386.zip][2]  | [OneDisc-linux-arm64.zip][3]   |
-| Windows    | [OneDisc-windows-x64.zip][4]   | [OneDisc-windows-x32.zip][5] | [OneDisc-windows-arm64.zip][6] |
-| macOS      | [OneDisc-darwin-x86_64.zip][7] | [OneDisc-darwin-i386.zip][8] | [OneDisc-darwin-arm64.zip][9]  |
+| Linux      | [OneDisc-Linux-x64.zip][1]     | [OneDisc-Linux-x86.zip][2]   | [OneDisc-Linux-arm64.zip][3]   |
+| Windows    | [OneDisc-Windows-x64.zip][4]   | [OneDisc-Windows-x86.zip][5] | [OneDisc-Windows-arm64.zip][6] |
+| macOS      | [OneDisc-Darwin-x64.zip][7]    | [OneDisc-Darwin-x86.zip][8]  | [OneDisc-Darwin-arm64.zip][9]  |
 
 
-[1]: /downloads/OneDisc-linux-x86_64.zip
-[2]: /downloads/OneDisc-linux-i386.zip
-[3]: /downloads/OneDisc-linux-arm64.zip
-[4]: /downloads/OneDisc-windows-x64.zip
-[5]: /downloads/OneDisc-windows-x32.zip
-[6]: /downloads/OneDisc-windows-arm64.zip
-[7]: /downloads/OneDisc-darwin-x86_64.zip
-[8]: /downloads/OneDisc-darwin-i386.zip
-[9]: /downloads/OneDisc-darwin-arm64.zip
-
--->
+[1]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Linux-x64.zip
+[2]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Linux-x86.zip
+[3]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Linux-arm64.zip
+[4]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Windows-x64.zip
+[5]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Windows-x86.zip
+[6]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Windows-arm64.zip
+[7]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Darwin-x64.zip
+[8]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Darwin-x86.zip
+[9]: https://github.com/This-is-XiaoDeng/OneDisc-Build/raw/main/stable/OneDisc-Darwin-arm64.zip
 
 ## 测试版
 
