@@ -44,7 +44,7 @@ OneDisc 高级设置（无特殊需要不建议更改）
 
 | 类型       | 必须 | 默认值     |
 |:----------:|:----:|:----------:|
-| 对象       | 是   | 无         |
+| 对象       | 否   | `{"level": 20}` |
 
 配置日志记录工具时的参数，可参考 [Python3 文档](https://docs.python.org/zh-cn/3/library/logging.html?highlight=logging%20basicconfig#logging.basicConfig)
 
