@@ -56,6 +56,28 @@ OneDisc 高级设置（无特殊需要不建议更改）
 
 OneBot V12 心跳元事件设置
 
+#### 忽略不需要的实参（`ignore_unneeded_args`）
+
+| 类型       | 必须 | 默认值                 |
+|:----------:|:----:|:----------------------:|
+| 布尔       | 否   | `true`                 |
+
+是否忽略动作请求中不需要的参数
+
+如为 `false`，将在处理请求中发现不被动作需要的参数时返回 `10004 - Unsupported Param`
+
+#### 忽略不正确的类型（`ignore_error_types`）
+
+
+| 类型       | 必须 | 默认值                 |
+|:----------:|:----:|:----------------------:|
+| 布尔       | 否   | `false`                |
+
+是否忽略动作请求中不需要的参数
+
+如为 `false`，将在处理请求中发现类型不正确的参数时返回 `10001 - Bad Request`
+
+
 #### 心跳事件开关（`enable`）
 
 | 类型       | 必须 | 默认值     |
@@ -153,7 +175,7 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
 
 设置 OneDisc 的连接方式，可以创建多个连接方式
 
-支持 HTTP (`http`)、HTTP WebHook (`http-webhook`)、WebSocket (`ws`)、反向 WebSocket (`ws-revese`) 四种连接方式，对象结构如下
+### OneBot V12
 
 <details>
 <summary>HTTP</summary>
@@ -241,6 +263,35 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
 | `access_token`  | 字符串/空    | 否   | `null`     | 访问令牌                   |
 | `reconnect_interval` | 数字    | 否   | `5000`     | 重连间隔（单位毫秒）       |
 
+
+
+</details>
+
+
+### OneBot V11
+
+> 在所有使用 OneBot V11 标准的连接中，均要指定协议版本 `"protocol_version": 11`（此选项默认被填入`12`），否则将提示「无效的连接类型或协议版本」
+
+<details>
+<summary>HTTP</summary>
+
+```json
+{
+    "type": "http",
+    "protocol_version": 11,
+    "host": "0.0.0.0",
+    "port": 5700,
+    "access_token": null
+}
+```
+
+| 项目               | 类型         | 必须 | 默认值     | 说明                       |
+|--------------------|--------------|------|------------|----------------------------|
+| `type`             | 字符串       | 是   | 无         | 连接类型，为 `http`        |
+| `protocol_version` | 数字         | 是   | `12`       | 协议版本，为 `11`          |
+| `host`             | 字符串       | 否   | `0.0.0.0`  | HTTP 服务器 IP             |
+| `port`             | 数字         | 否   | `5700`     | HTTP 服务器端口            |
+| `access_token`     | 字符串/空    | 否   | `null`     | 访问令牌                   |
 
 
 </details>
