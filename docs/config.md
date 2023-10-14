@@ -270,7 +270,7 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
 
 ### OneBot V11
 
-> 在所有使用 OneBot V11 标准的连接中，均要指定协议版本 `"protocol_version": 11`（此选项默认被填入`12`），否则将提示「无效的连接类型或协议版本」
+> 在所有采用 OneBot V11 标准的连接中，请确保指定 `"protocol_version": 11`（默认值为 `12` ）。若不正确设定，将会收到「无效的连接类型或协议版本」的提示。
 
 <details>
 <summary>HTTP</summary>
