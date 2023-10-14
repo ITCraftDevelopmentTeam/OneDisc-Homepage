@@ -36,7 +36,7 @@
 | `notice.group_message_delete`      | 同 `notice.channel_message_delete`                                                                      |
 | `notice.private_message_delete`    | 同 `notice.channel_message_delete`                                                                      |
 
-## 消息段
+### 消息段
 
 | 消息段             | 说明                                               |
 |--------------------|----------------------------------------------------|
