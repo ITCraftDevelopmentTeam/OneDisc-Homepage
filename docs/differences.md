@@ -20,7 +20,6 @@
 
 | 事件                             | 说明                                   |
 |----------------------------------|----------------------------------------|
-| `meta.status_update`             | 太懒了，还没写                         |
 | `notice.friend_increase`         | Discord Bot 没有好友功能               |
 | `notice.friend_decrease`         | Discord Bot 没有好友功能               |
 | `notice.channel_member_increase` | `discord.py` 未提供相关接口            |
