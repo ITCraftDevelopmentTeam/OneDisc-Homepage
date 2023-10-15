@@ -55,6 +55,12 @@
 | `name`      | str         | 自定义表情名称            |
 | `id`        | int         | 表情 ID                   |
 
+#### `discord.channel` 频道
+
+| 字段名       | 数据类型    | 说明                      |
+|--------------|-------------|---------------------------|
+| `channel_id` | str         | 频道 ID                   |
+
 [1]: config.md#%E5%9C%A8%E4%BA%8B%E4%BB%B6%E4%B8%AD%E4%BD%BF%E7%94%A8%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BB%A3%E6%9B%BF%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E5%AD%90%E7%B1%BB%E5%9E%8B-use-empty-for-unsupported-subtype
 [2]: diff-v11.md
 
