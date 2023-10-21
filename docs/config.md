@@ -59,18 +59,6 @@ OneDisc 高级设置（无特殊需要不建议更改）
 
 如为 `false`，将在处理请求中发现不被动作需要的参数时返回 `10004 - Unsupported Param`
 
-### 允许 OneBot V11 连接调用 OneBot V12 动作（`allow_v12_actions`）
-
-| 类型       | 必须 | 默认值                 |
-|:----------:|:----:|:----------------------:|
-| 布尔       | 否   | `true`                 |
-
-### 允许 OneBot V12 连接调用 OneBot V11 接口（`allow_v11_actions`）
-
-| 类型       | 必须 | 默认值                 |
-|:----------:|:----:|:----------------------:|
-| 布尔       | 否   | `flase`                |
-
 ### 忽略不正确的类型（`ignore_error_types`）
 
 
@@ -197,6 +185,7 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
     "type": "http",
     "host": "0.0.0.0",
     "port": 8080,
+    "protocol_version": 12,
     "access_token": null,
     "event_enabled": false,
     "event_buffer_size": 0
@@ -206,6 +195,7 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
 | 项目                | 类型      | 必须 | 默认值    | 备注                 |
 |---------------------|-----------|------|-----------|----------------------|
 | `type`              | 字符串    | 是   | 无        | 连接的类型，为`http` |
+| `protocol_version`  | 数字      | 否   | `12`      | 协议版本，为 `12`    |
 | `host`              | 字符串    | 否   | `0.0.0.0` | HTTP 服务器 IP       |
 | `port`              | 数字      | 否   | `8080`    | HTTP 服务器端口      |
 | `access_token`      | 字符串/空 | 是   | `null`    | 访问令牌             |
@@ -220,17 +210,19 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
 {
     "type": "http-webhook",
     "url": null,
+    "protocol_version": 12,
     "access_token": null,
     "timeout": 0
 }
 ```
 
-| 项目            | 类型         | 必须 | 默认值     | 说明                       |
-|-----------------|--------------|------|------------|----------------------------|
-| `type`          | 字符串       | 是   | 无         | 连接类型，为`http-webhook` |
-| `url`           | 字符串       | 是   | 无         | 上报地址                   |
-| `access_token`  | 字符串/空    | 否   | `null`     | 访问令牌                   |
-| `timeout`       | 数字         | 否   | `0`        | 超时时间（单位毫秒，为`0`不启用） |
+| 项目               | 类型         | 必须 | 默认值     | 说明                       |
+|--------------------|--------------|------|------------|----------------------------|
+| `type`             | 字符串       | 是   | 无         | 连接类型，为`http-webhook` |
+| `protocol_version` | 数字         | 否   | `12`      | 协议版本，为 `12`    |
+| `url`              | 字符串       | 是   | 无         | 上报地址                   |
+| `access_token`     | 字符串/空    | 否   | `null`     | 访问令牌                   |
+| `timeout`          | 数字         | 否   | `0`        | 超时时间（单位毫秒，为`0`不启用） |
 
 </details>
 
@@ -240,18 +232,20 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
 ```json
 {
     "type": "ws",
+    "protocol_version": 12,
     "host": "0.0.0.0",
     "port": 5700,
     "access_token": null
 }
 ```
 
-| 项目           | 类型           | 必须 | 默认值             | 说明                        |
-|----------------|----------------|------|--------------------|-----------------------------|
-| `type`         | 字符串         | 是   | 无                 | 连接类型，为`ws`            |
-| `port`         | 数字           | 否   | `5700`             | WebSocket 服务器端口        |
-| `host`         | 字符串         | 否   | `0.0.0.0`          | WebSocket 服务器 IP         |
-| `access_token` | 字符串/空      | 否   | `null`             | 访问令牌                    |
+| 项目               | 类型           | 必须 | 默认值             | 说明                        |
+|--------------------|----------------|------|--------------------|-----------------------------|
+| `type`             | 字符串         | 是   | 无                 | 连接类型，为`ws`            |
+| `protocol_version` | 数字           | 否   | `12`               | 协议版本，为 `12`           |
+| `port`             | 数字           | 否   | `5700`             | WebSocket 服务器端口        |
+| `host`             | 字符串         | 否   | `0.0.0.0`          | WebSocket 服务器 IP         |
+| `access_token`     | 字符串/空      | 否   | `null`             | 访问令牌                    |
 
 
 </details>
@@ -263,17 +257,19 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
 {
     "type": "ws-reverse",
     "url": "",
+    "protocol_version": 12,
     "access_token": null,
     "reconnect_interval": 5000
 }
 ```
 
-| 项目            | 类型         | 必须 | 默认值     | 说明                       |
-|-----------------|--------------|------|------------|----------------------------|
-| `type`          | 字符串       | 是   | 无         | 连接类型，为`ws-reverse`   |
-| `url`           | 字符串       | 是   | 无         | WebSocket 客户端连接地址   |
-| `access_token`  | 字符串/空    | 否   | `null`     | 访问令牌                   |
-| `reconnect_interval` | 数字    | 否   | `5000`     | 重连间隔（单位毫秒）       |
+| 项目                 | 类型      | 必须 | 默认值     | 说明                       |
+|----------------------|-----------|------|------------|----------------------------|
+| `type`               | 字符串    | 是   | 无         | 连接类型，为`ws-reverse`   |
+| `protocol_version`   | 数字      | 否   | `12`       | 协议版本，为 `12`          |
+| `url`                | 字符串    | 是   | 无         | WebSocket 客户端连接地址   |
+| `access_token`       | 字符串/空 | 否   | `null`     | 访问令牌                   |
+| `reconnect_interval` | 数字      | 否   | `5000`     | 重连间隔（单位毫秒）       |
 
 
 
@@ -307,3 +303,84 @@ aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to hos
 
 
 </details>
+
+<details>
+<summary>HTTP Post</summary>
+
+```json
+{
+    "type": "http-post",
+    "protocol_version": 11,
+    "url": "",
+    "timeout": 0,
+    "secret": null
+}
+```
+
+| 项目               | 类型         | 必须 | 默认值     | 说明                       |
+|--------------------|--------------|------|------------|----------------------------|
+| `type`             | 字符串       | 是   | 无         | 连接类型，为 `http`        |
+| `protocol_version` | 数字         | 是   | `12`       | 协议版本，为 `11`          |
+| `url`              | 字符串       | 是   | 无         | HTTP 连接地址              |
+| `secret`           | 字符串/空    | 否   | `null`     | 请求密钥                   |
+
+
+</details>
+
+
+
+<details>
+<summary>WebSocket</summary>
+
+```json
+{
+    "type": "ws",
+    "protocol_version": 11,
+    "host": "0.0.0.0",
+    "port": 6700,
+    "access_token": null
+}
+```
+
+| 项目               | 类型           | 必须 | 默认值             | 说明                        |
+|--------------------|----------------|------|--------------------|-----------------------------|
+| `type`             | 字符串         | 是   | 无                 | 连接类型，为`ws`            |
+| `protocol_version` | 数字           | 否   | `12`               | 协议版本，为 `11`           |
+| `port`             | 数字           | 否   | `6700`             | WebSocket 服务器端口        |
+| `host`             | 字符串         | 否   | `0.0.0.0`          | WebSocket 服务器 IP         |
+| `access_token`     | 字符串/空      | 否   | `null`             | 访问令牌                    |
+
+
+</details>
+
+
+<details>
+<summary>反向 WebSocket</summary>
+
+```json
+{
+    "type": "ws-reverse",
+    "protocol_version": 11,
+    "url": "",
+    "api_url": "",
+    "event_url": "",
+    "reconnect_interval": 3000,
+    "use_universal_client": false,
+    "access_token": null
+}
+```
+
+| 项目               | 类型           | 必须 | 默认值             | 说明                        |
+|--------------------|----------------|------|--------------------|-----------------------------|
+| `type`             | 字符串         | 是   | 无                 | 连接类型，为`ws-reverse`    |
+| `protocol_version` | 数字           | 否   | `12`               | 协议版本，为 `11`           |
+| `url`              | 字符串         | 否   | 无                 | WebSocket 服务器地址        |
+| `api_url`          | 字符串         | 否   | 无                 | WebSocket API 服务器地址，为空时填入 `url` 字段的配置 |
+| `event_url`        | 字符串         | 否   | 无                 | WebSocket Event 服务器地址，为空时填入 `url` 字段的配置 |
+| `use_universal_client` | 布尔       | 否   | `false`            | 是否启用 WebSocket Universal 客户端 |
+| `access_token`     | 字符串/空      | 否   | `null`             | 访问令牌                    |
+
+
+</details>
+
+
