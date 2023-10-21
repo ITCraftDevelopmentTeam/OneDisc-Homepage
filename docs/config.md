@@ -59,6 +59,22 @@ OneDisc 高级设置（无特殊需要不建议更改）
 
 如为 `false`，将在处理请求中发现不被动作需要的参数时返回 `10004 - Unsupported Param`
 
+### 默认最大成员数（`default_max_member_count`）
+
+| 类型       | 必须 | 默认值                 |
+|:----------:|:----:|:----------------------:|
+| 数字       | 否   | `-1`                   |
+
+`get_group_info` (OneBot V11) 及有关接口 `max_member_count` 字段内容
+
+### 是否可以发送语音（`can_send_record`）
+
+| 类型       | 必须 | 默认值                 |
+|:----------:|:----:|:----------------------:|
+| 布尔       | 否   | `false`                |
+
+`can_send_record` (OneBot V11) 接口中 `yes` 字段内容
+
 ### 忽略不正确的类型（`ignore_error_types`）
 
 
