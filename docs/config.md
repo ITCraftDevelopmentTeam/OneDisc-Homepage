@@ -145,6 +145,25 @@ OneBot V12 心跳元事件设置
 
 如在`channel_message_delete`事件中，由于`discord.py`限制，无法判断消息为主动删除还是被管理员删除，当`use_empty_for_unsupported_subtype`为`false`时，这个事件的`sub_type`将被填入`recall`（发送者主动删除）；当`use_empty_for_unsupported_subtype`为`true`时，这个事件的`sub_type`将被填入空字符串
 
+
+### 默认私聊消息子类型（`default_message_sub_type`）
+
+| 类型      | 必须 | 默认值           |
+|:---------:|:----:|:----------------:|
+| 字符串    | 否   | `group`          |
+
+OneBot V11 中，私聊消息事件（`message.private`）的 `sub_type` 字段内容
+
+### 缓存优先（`cahce_first`）
+
+| 类型      | 必须 | 默认值           |
+|:---------:|:----:|:----------------:|
+| 布尔      | 否   | `flase`          |
+
+此项为 `true` 时，当同一文件同时存在于缓存 URL 索引和本地储存库（`.cache/files`）时，优先保留缓存（删除本地储存文件）
+
+此项为 `false` 时，将删除缓存库的索引
+
 ### 是否忽略不支持的消息段（`ignore_unsupported_segment`）
 
 | 类型      | 必须 | 默认值           |
