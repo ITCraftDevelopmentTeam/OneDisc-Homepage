@@ -17,11 +17,11 @@
 初次运行（或检测不到 `config.json`）时，OneDisc 会引导您创建一个新的配置文件
 
 ```bash
-[xiaodeng3386@xd-pc 下载]$ ./onedisc
+$ ./onedisc
 没有可用的配置文件，正在进入配置文件创建向导 ...
 机器人令牌：*************
 代理服务器（如无需请留空）：http://127.0.0.1:7890
-已在 /home/xiaodeng3386/下载/config.json 创建配置
+已在 /path/to/your/onedisc/config.json 创建配置
 ```
 
 ### 如何创建 机器人令牌（Bot Token）
@@ -39,7 +39,7 @@
 
 ```json
 {
-    "account_token": "*************",
+    "account_token": "--YOUR TOKEN HERE--",
     "system": {
         "proxy": "http://127.0.0.1:7890",
         "logger": {
@@ -59,7 +59,7 @@
 出现类似输出代表 OneDisc 已成功启动
 
 ```bash
-[2023-10-01 12:23:46][__main__ / INFO]: 成功登陆到 XDbot 0x04#3876
+[1919-08-10 11:45:14][__main__ / INFO]: 成功登陆到 OneDisc#9527
 ```
 
 
