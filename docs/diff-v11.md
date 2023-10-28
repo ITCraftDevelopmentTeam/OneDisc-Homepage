@@ -15,8 +15,6 @@
 | `notice.group_upload`  | |
 | `notice.group_admin`   | |
 | `notice.friend_add`    | Discord Bot 没有好友功能 |
-| `notice.group_recall`  | |
-| `notice.friend_recall` | |
 | `notice.notify`        | Discord 不支持相关功能 |
 | `request.friend`       | Discord Bot 没有好友功能 |
 | `request.group`        | Discord 不支持相关功能 |
@@ -76,10 +74,8 @@
 | 窗口抖动       | `shake`     | Discord 不支持相关功能 |
 | 戳一戳         | `poke`      | Discord 不支持相关功能 |
 | 匿名发消息     | `anonymous` | Discord 不支持相关功能 |
-| 链接分享       | `share`     |                        |
 | 推荐好友/群    | `contact`   |                        |
 | 位置           | `location`  | Discord 不支持有关功能 |
-| 音乐分享       | `share`     |                        |
 | 音乐自定义分享 | `music`     |                        |
 | 合并转发       | `forward`   | Discord 不支持有关功能 |
 | 合并转发节点   | `node`      |                        |
@@ -103,7 +99,7 @@
 
 ### 拓展消息段
 
-#### `discord.emoji` 自定义表情
+#### `emoji` 自定义表情
 
 > 这是一个**候选消息段**，可能在未来的版本发生更改
 
@@ -112,7 +108,7 @@
 | `name`      | str         | 自定义表情名称            |
 | `id`        | int         | 表情 ID                   |
 
-#### `discord.channel` 频道
+#### `channel` 频道
 
 
 > 这是一个**候选消息段**，可能在未来的版本发生更改
@@ -120,3 +116,4 @@
 | 字段名       | 数据类型    | 说明                      |
 |--------------|-------------|---------------------------|
 | `channel_id` | int         | 频道 ID                   |
+
