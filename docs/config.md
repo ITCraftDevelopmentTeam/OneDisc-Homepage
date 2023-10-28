@@ -75,16 +75,12 @@ OneDisc 高级设置（无特殊需要不建议更改）
 
 `can_send_record` (OneBot V11) 接口中 `yes` 字段内容
 
-### 忽略不正确的类型（`ignore_error_types`）
+### 跳过参数类型检查（`skip_params_type_checking`）
 
 
 | 类型       | 必须 | 默认值                 |
 |:----------:|:----:|:----------------------:|
 | 布尔       | 否   | `false`                |
-
-是否忽略动作请求中不需要的参数
-
-如为 `false`，将在处理请求中发现类型不正确的参数时返回 `10001 - Bad Request`
 
 ### 心跳元事件设置（`heartbeat`）
 
