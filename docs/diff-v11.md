@@ -34,7 +34,7 @@
 | 字段名     | 说明                                          |
 |------------|-----------------------------------------------|
 | `font`     | Discord 不支持相关功能，将填入 `-1`           |
-| `sender`   | 平台限制，只能获取 `user_id`、`nickname`、`card` 字段 |
+| `sender`   | 平台限制，只能获取 `user_id`、`nickname`、`card`、`role` 字段 |
 
 ### API
 
@@ -46,7 +46,6 @@
 | 群组全员禁言     | `set_group_whole_ban`     | Discord 不支持相关功能   |
 | 群组设置管理员   | `set_group_admin`         |                          |
 | 群组匿名         | `set_group_anonymous`     | Discord 不支持相关功能   |
-| 设置群名片       | `set_group_card`          |                          |
 | 设置群名         | `set_group_name`          | `discord.py` 未提供接口  |
 | 设置群组专属头衔 | `set_group_special_title` | Discord 不支持相关功能   |
 | 处理加好友请求   | `set_friend_add_request`  | Discord Bot 没有好友功能 |
@@ -59,7 +58,7 @@
 | 获取语音         | `get_record`              | ~~这玩意不写CQ码上了吗~~ |
 | 获取图片         | `get_image`               | ~~这玩意不写CQ码上了吗~~ |
 | 重启 OneBot 实现 | `set_restart`             | 技术问题，暂未实现       |
-| 获取群成员信息   | `get_group_member_info`   | 平台限制，只能获取 `user_id`、`nickname`、`card`、`sex`、`join_time` 字段 |
+| 获取群成员信息   | `get_group_member_info`   | 平台限制，只能获取 `user_id`、`nickname`、`card`、`sex`、`join_time`、`role` 字段 |
 
 > 「说明」为空的接口表示「暂未实现」将在后续版本完成
 
