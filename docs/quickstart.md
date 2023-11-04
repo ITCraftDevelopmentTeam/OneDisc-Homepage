@@ -6,6 +6,8 @@
 
 > 如果「下载」页内提供的是一个压缩包，请在下载完成后将它解压到一个您找得到的目录
 
+如果您需要使用 OneBot V11 中的合并转发功能，请安装 [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
+
 ## 初次运行
 
 > 在 MacOS 或 Linux 中，执行前需要赋予 OneDisc 执行权限
