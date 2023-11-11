@@ -46,7 +46,6 @@
 | 群组全员禁言     | `set_group_whole_ban`     | Discord 不支持相关功能   |
 | 群组设置管理员   | `set_group_admin`         |                          |
 | 群组匿名         | `set_group_anonymous`     | Discord 不支持相关功能   |
-| 设置群名         | `set_group_name`          | `discord.py` 未提供接口  |
 | 设置群组专属头衔 | `set_group_special_title` | Discord 不支持相关功能   |
 | 处理加好友请求   | `set_friend_add_request`  | Discord Bot 没有好友功能 |
 | 处理加群请求     | `set_group_add_request`   | Discord 不支持相关功能   |
