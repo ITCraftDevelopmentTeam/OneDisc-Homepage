@@ -13,7 +13,6 @@
 | 事件名称               | 说明             |
 |------------------------|------------------|
 | `notice.group_upload`  | |
-| `notice.group_admin`   | |
 | `notice.friend_add`    | Discord Bot 没有好友功能 |
 | `notice.notify`        | Discord 不支持相关功能 |
 | `request.friend`       | Discord Bot 没有好友功能 |
@@ -56,7 +55,6 @@
 | 获取 QQ 接口凭证 | `get_credentials`         | ~~这是什么.jpg~~         |
 | 获取语音         | `get_record`              | ~~这玩意不写CQ码上了吗~~ |
 | 获取图片         | `get_image`               | ~~这玩意不写CQ码上了吗~~ |
-| 重启 OneBot 实现 | `set_restart`             | 技术问题，暂未实现       |
 | 获取群成员信息   | `get_group_member_info`   | 平台限制，只能获取 `user_id`、`nickname`、`card`、`sex`、`join_time`、`role` 字段 |
 
 > 「说明」为空的接口表示「暂未实现」将在后续版本完成
@@ -72,7 +70,6 @@
 | 戳一戳         | `poke`      | Discord 不支持相关功能 |
 | 匿名发消息     | `anonymous` | Discord 不支持相关功能 |
 | 推荐好友/群    | `contact`   |                        |
-| 位置           | `location`  | Discord 不支持有关功能 |
 | 音乐自定义分享 | `music`     |                        |
 | 合并转发       | `forward`   | Discord 不支持有关功能 |
 | XML 消息       | `xml`       | Discord 不支持有关功能 |
