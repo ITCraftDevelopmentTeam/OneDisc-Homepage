@@ -75,7 +75,6 @@
 | 位置           | `location`  | Discord 不支持有关功能 |
 | 音乐自定义分享 | `music`     |                        |
 | 合并转发       | `forward`   | Discord 不支持有关功能 |
-| 合并转发节点   | `node`      |                        |
 | XML 消息       | `xml`       | Discord 不支持有关功能 |
 | JSON 消息      | `json`      | Discord 不支持有关功能 |
 
