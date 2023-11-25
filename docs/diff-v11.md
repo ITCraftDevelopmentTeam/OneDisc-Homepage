@@ -43,7 +43,6 @@
 | 发送好友赞       | `send_like`               | Discord 不支持相关功能   |
 | 群组匿名用户禁言 | `set_group_anonymous_ban` | Discord 不支持相关功能   |
 | 群组全员禁言     | `set_group_whole_ban`     | Discord 不支持相关功能   |
-| 群组设置管理员   | `set_group_admin`         |                          |
 | 群组匿名         | `set_group_anonymous`     | Discord 不支持相关功能   |
 | 设置群组专属头衔 | `set_group_special_title` | Discord 不支持相关功能   |
 | 处理加好友请求   | `set_friend_add_request`  | Discord Bot 没有好友功能 |
