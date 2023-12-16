@@ -1,5 +1,7 @@
 # 发行版下载
 
+> 下载功能维护中
+
 | 最新稳定版  | 最新测试版  |
 |-------------|-------------|
 | <span id="stable-version">Loading version...</span> | <span id="beta-version">Loading version...</span> |
