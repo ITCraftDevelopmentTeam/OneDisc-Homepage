@@ -41,7 +41,7 @@ async function fetchBetaArtifacts() {
   const data = await response.json();
   let html = "<ul>";
   data.artifacts.forEach(function(item, index, array) {
-    html += `<li><a href="${item.url}">${item.name}</a></li>`;
+    html += `<li><a href="https://github.com/ITCraftDevelopmentTeam/OneDisc/actions/runs/${item.workflow_run.id}/artifacts/${item.id}">${item.name}</a></li>`;
   })
   html += "</ul>";
   return html;
