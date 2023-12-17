@@ -5,12 +5,12 @@ async function fetchVersion() {
   
   const response = await fetch("https://itcdt.top/OneDisc/artifacts.json");
   const data = await response.json();
-  let html = "<ul>";
+  let markdown = "";
   data.artifacts.forEach(function(item, index, array) {
-    html += `<li><a href="${item.url}">${item.name}</a></li>`;
+    markdown += `\n- [${item.url}](${item.name})`;
   })
-  html += "</ul>"
-  document.getElementById("beta-artifacts").innerText = html;
+  // markdown += "</ul>"
+  document.getElementById("beta-artifacts").innerText = markdown;
 
   const stable = await (await fetch("https://api.github.com/repos/ITCraftDevelopmentTeam/OneDisc/releases/latest")).json();
   document.getElementById("stable-version").innerText = `${stable.tag_name.slice(1)}.0`;
