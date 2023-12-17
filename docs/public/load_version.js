@@ -1,8 +1,7 @@
 
 async function fetchVersion() {
-  const response = await fetch("https://itcdt.top/OneDisc/version.json");
-  const data = await response.json();
-  document.getElementById("beta-version").innerText = data.version;
+  const beta = await (await fetch("https://itcdt.top/OneDisc/version.json")).json();
+  document.getElementById("beta-version").innerText = beta.version;
   
   const response = await fetch("https://itcdt.top/OneDisc/artifacts.json");
   const data = await response.json();
@@ -13,8 +12,7 @@ async function fetchVersion() {
   html += "</ol>"
   document.getElementById("beta-artifacts").innerText = html;
 
-  const response = await fetch("https://api.github.com/repos/ITCraftDevelopmentTeam/OneDisc/releases/latest");
-  const data = await response.json();
+  const stable = await (await fetch("https://api.github.com/repos/ITCraftDevelopmentTeam/OneDisc/releases/latest")).json();
   document.getElementById("stable-version").innerText = data.tag_name;
 
   
