@@ -13,7 +13,7 @@ async function fetchVersion() {
   document.getElementById("beta-artifacts").innerText = html;
 
   const stable = await (await fetch("https://api.github.com/repos/ITCraftDevelopmentTeam/OneDisc/releases/latest")).json();
-  document.getElementById("stable-version").innerText = data.tag_name;
+  document.getElementById("stable-version").innerText = `${stable.tag_name.slice(1)}.0`;
 
   
 }
